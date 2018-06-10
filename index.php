@@ -8,7 +8,6 @@
 //单一入口
 //常量定义
 
-
 define("ROOT_DIR",dirname(__FILE__).DIRECTORY_SEPARATOR);
 
 //应用目录
@@ -32,5 +31,5 @@ if(DEBUG){
 include_once CORE."Loader.php";
 
 spl_autoload_register("\System\Core\Loader::autoLoad");
-//\System\Core\Route::parseUri();
+
 System\Core\ApplicationBase::run();
